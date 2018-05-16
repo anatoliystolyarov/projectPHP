@@ -5,6 +5,7 @@
 	<title>LogPage</title>
 </head>
 <body>
+<center>
 <?php
 	$f=$_POST['firstname'];
 	$n=$_POST['secondname'];
@@ -34,5 +35,6 @@
 		echo "Succes <br><a href='index.php'>Add new user</a>";
 	}
 ?>
+</center>
 </body>
 </html>
