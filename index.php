@@ -16,7 +16,7 @@
 		echo "<br>Inventory number<br><br>";
 		echo "<input type='text' name='invnumber'><br>";
 		echo '<br><p><input type="Submit">';
-		echo "Hello from Windows"
+		
 	?>
 </form>
 <form action="showusers.php" method="">
