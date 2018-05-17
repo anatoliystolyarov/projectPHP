@@ -9,8 +9,6 @@
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	margin-left: -150px;
-	margin-top: -100px;
 	background: #AFEEEE;
 	}
 </style>
