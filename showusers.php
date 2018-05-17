@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+<center>
 	<meta charset="utf-8">
 	<title>Table with users</title>
+</center>
 </head>
 <body>
 	<?php 

@@ -5,6 +5,7 @@
 	<title>Registration page</title>
 </head>
 <body>
+<center>
 <form action="adduser.php" method="POST">
 	<?php
 		echo "First Name <br><br>";
@@ -24,5 +25,6 @@
 		echo '<a href="showusers.php"><button>View a table</button></a>';
 	 ?>
 </form>
+</center>
 </body>
 </html>
