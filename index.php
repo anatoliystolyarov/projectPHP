@@ -8,6 +8,7 @@
 <center>
 <form action="adduser.php" method="POST">
 	<?php
+		#echocomment
 		echo "First Name <br><br>";
 		echo "<input type='text' name='firstname'><br>";
 		echo "<br>Second Name <br><br>";
