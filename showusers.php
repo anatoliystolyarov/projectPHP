@@ -4,9 +4,20 @@
 <center>
 	<meta charset="utf-8">
 	<title>Table with users</title>
+<style>
+	#centerLayer{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin-left: -150px;
+	margin-top: -100px;
+	background: #AFEEEE;
+	}
+</style>
 </center>
 </head>
 <body>
+<div id="centerLayer">
 	<?php 
 		$link=mysql_connect("localhost", "root", "123");
 		mysql_select_db('mysql', $link);
@@ -22,5 +33,6 @@
 		}
 		echo "</table>";
 	?>
+</div>
 </body>
 </html>
