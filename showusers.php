@@ -24,6 +24,8 @@
                  }
                 $Query = $link->query("SELECT * FROM userdata");
 		echo "<table border 1px>";
+                echo "<tr><th>First Name</th><th>Second Name</th><th>Year of birth</th><th>Inventory</br>Number</th></tr>";
+		
 		while($Result=$Query->fetch()){
 			echo "<tr>";
 			echo "<td>".$Result[0]."</td><td>".$Result[1]."</td><td>".$Result[2]."</td><td>".$Result[3]."</td>";
