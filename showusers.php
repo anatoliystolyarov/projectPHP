@@ -18,7 +18,7 @@
 <div id="centerLayer">
 	<?php 
                try{
-		$link = new PDO('mysql:host=mysql; dbname=project; charset=UTF8', 'root', 'pass', array(PDO::ATTR_EMULATE_PREPARES => false, PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+		         $link = new PDO('mysql:host=mysql; dbname=project; charset=UTF8', 'root', 'pass', array(PDO::ATTR_EMULATE_PREPARES => false, PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
                 }catch (PDOException $e){
                   echo'ERROR: '.$e->getMessage(); 
                  }

@@ -11,18 +11,18 @@
 	$n=$_POST['secondname'];
 	$o=$_POST['date'];
 	$g=$_POST['invnumber'];
-	$link=mysql_connect("localhost", "root", "123");#server,user,password
-	mysql_select_db('mysql', $link);#data base name
-	mysql_query('SET character_set_database=utf8'); 
-	mysql_query('SET NAMES utf8');
-	$seach="SELECT * FROM userdata;";#table name
-	$r=mysql_query($seach);
+try{
+    $link = new PDO('mysql:host=mysql; dbname=project; charset=UTF8', 'root', 'pass', array(PDO::ATTR_EMULATE_PREPARES => false, PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+}catch (PDOException $e){
+    echo'ERROR: '.$e->getMessage();
+}
+	$Query = $link->query("SELECT * FROM userdata");
 	$p=0;
-	while($q=mysql_fetch_row($r)){
+	while($q=$Query->fetch()){
 		if($q[0]==$f and $q[1]==$n and $q[2]==$o){
 			$up="UPDATE userdata SET g=".$g." WHERE f='".$f."' AND n='".$n."' AND o='".$o."';";
-			$r=mysql_query($up);
-			mysql_close($link);
+			$Query=$link->query($up);
+			$link=null;
 			$p=1;
 			echo "Succes. <br><a href='index.php'>Add new user</a>";
 			break;
@@ -30,8 +30,8 @@
 	}
 	if($p==0){
 		$s="INSERT INTO  userdata VALUES('".$f."','".$n."','".$o."','".$g."');";
-		mysql_query($s);
-		mysql_close($link);
+		$Query= $link->query($s);
+		$link=null;
 		echo "Succes <br><a href='index.php'>Add new user</a>";
 	}
 ?>
