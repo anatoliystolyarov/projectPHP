@@ -17,16 +17,16 @@
 <body>
 <div id="centerLayer">
 	<?php 
-		$link=mysql_connect("localhost", "root", "123");
-		mysql_select_db('mysql', $link);
-		mysql_query('SET character_set_database=utf8'); 
-		mysql_query('SET NAMES utf8');
-		$s="SELECT * FROM userdata;";
-		$r=mysql_query($s);
+               try{
+		$link = new PDO('mysql:host=mysql; dbname=project; charset=UTF8', 'root', 'pass', array(PDO::ATTR_EMULATE_PREPARES => false, PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+                }catch (PDOException $e){
+                  echo'ERROR: '.$e->getMessage(); 
+                 }
+                $Query = $link->query("SELECT * FROM userdata");
 		echo "<table border 1px>";
-		while($q=mysql_fetch_row($r)){
+		while($Result=$Query->fetch()){
 			echo "<tr>";
-			echo "<td>".$q[0]."</td><td>".$q[1]."</td><td>".$q[2]."</td><td>".$q[3]."</td>";
+			echo "<td>".$Result[0]."</td><td>".$Result[1]."</td><td>".$Result[2]."</td><td>".$Result[3]."</td>";
 			echo "</tr>";
 		}
 		echo "</table>";
