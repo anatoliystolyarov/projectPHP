@@ -11,15 +11,6 @@
 	height: 100%;
 	background: #AFEEEE;
 	}
-
-    table {
-        display: block; /* Блочный элемент */
-        background-position: 100% 0; /* Положение фона */
-        position: relative; /* Относительное позиционирование */
-        left: 17px; /* Сдвигаем вправо */
-        padding: 6px 0; /* Поля вокруг текста */
-        text-indent: -17px; /* Сдвигаем текст влево */
-    }
 </style>
 </style>
 </center>
