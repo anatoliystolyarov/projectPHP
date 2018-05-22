@@ -9,7 +9,7 @@
 <form action="adduser.php" method="POST">
 	<?php
 		#echocomment
-		echo "Full Name <br><br>";
+		echo "Full your Name<br><br>";
 		echo "<input type='text' name='firstname'><br>";
 		echo "<br>Second Name <br><br>";
 		echo "<input type='text' name='secondname'><br>";
