@@ -13,7 +13,7 @@
 		echo "<input type='text' name='firstname'><br>";
 		echo "<br>Second Name <br><br>";
 		echo "<input type='text' name='secondname'><br>";
-		echo "<br>Birth date <br><br>";
+		echo "<br>Year of birth <br><br>";
 		echo "<input type='text' name='date'><br>";
 		echo "<br>Inventory number<br><br>";
 		echo "<input type='text' name='invnumber'><br>";
