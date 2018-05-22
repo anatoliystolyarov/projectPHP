@@ -5,22 +5,12 @@
 	<meta charset="utf-8">
 	<title>Table with users</title>
     <style type="text/css">
-	#centerLayer{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background: #AFEEEE;
-	}
-
-    table {
-        display: block; /* Блочный элемент */
-        background-position: 100% 0; /* Положение фона */
-        position: relative; /* Относительное позиционирование */
-        left: 17px; /* Сдвигаем вправо */
-        padding: 6px 0; /* Поля вокруг текста */
-        text-indent: -17px; /* Сдвигаем текст влево */
+	#centerLayer {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #AFEEEE;
     }
-</style>
 </style>
 </center>
 </head>
