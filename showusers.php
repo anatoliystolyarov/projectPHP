@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<center>
 	<meta charset="utf-8">
 	<title>Table with users</title>
     <style type="text/css">
@@ -12,10 +11,9 @@
         background: #AFEEEE;
     }
 </style>
-</center>
 </head>
 <body>
-<div id="centerLayer">
+<div style="text-align:center">
 	<?php 
                try{
 		         $link = new PDO('mysql:host=mysql; dbname=projectphp; charset=UTF8', 'root', 'pass', array(PDO::ATTR_EMULATE_PREPARES => false, PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
