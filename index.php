@@ -5,11 +5,11 @@
 	<title>Registration page</title>
 </head>
 <body>
-<center>
+<div style="text-align:center">
 <form action="adduser.php" method="POST">
 	<?php
 		#echocomment
-		echo "Full your Name<br><br>";
+		echo "Frist Name<br><br>";
 		echo "<input type='text' name='firstname'><br>";
 		echo "<br>Second Name <br><br>";
 		echo "<input type='text' name='secondname'><br>";
@@ -26,6 +26,6 @@
 		echo '<a href="showusers.php"><button>View a table</button></a>';
 	 ?>
 </form>
-</center>
+</div>
 </body>
 </html>
