@@ -22,6 +22,7 @@ body {
 	margin: 0 auto;
 	padding: 0;
 	position: relative;
+	background-color: #FFFACD;
 }
 h1{ font-size:28px;}
 h2{ font-size:26px;}
@@ -29,7 +30,7 @@ h3{ font-size:18px;}
 h4{ font-size:16px;}
 h5{ font-size:14px;}
 h6{ font-size:12px;}
-h1,h2,h3,h4,h5,h6{ color:#563D64;}
+h1,h2,h3,h4,h5,h6{ color:#FAFAD2;}
 small{ font-size:10px;}
 b, strong{ font-weight:bold;}
 a{ text-decoration: none; }
@@ -103,7 +104,7 @@ form:after {
 }
 #content:after,
 #content:before {
-	background: #f9f9f9;
+	background: #FFFF00;
 	background: -moz-linear-gradient(top,  rgba(248,248,248,1) 0%, rgba(249,249,249,1) 100%);
 	background: -webkit-linear-gradient(top,  rgba(248,248,248,1) 0%,rgba(249,249,249,1) 100%);
 	background: -o-linear-gradient(top,  rgba(248,248,248,1) 0%,rgba(249,249,249,1) 100%);
@@ -254,6 +255,8 @@ form:after {
 	transition: all 0.3s ease;
 }
 .button a:hover {
+	color: #7E7E7E;
+	font-size: 17px;
 	background-position: 0 -135px;
-	color: #00aeef;
+	color: #7E7E7E;
 }

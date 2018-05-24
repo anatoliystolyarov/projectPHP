@@ -7,7 +7,7 @@
 
 </head>
 <body>
-<center>
+
 <div class="container">
 <section id="content">
 <form action="">
@@ -43,6 +43,6 @@ try{
 </form>
 </section>
 </div>
-</center>
+
 </body>
 </html>
