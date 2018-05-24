@@ -3,11 +3,14 @@
 <head>
 	<meta charset="utf-8">
 	<title>LogPage</title>
-
+	<link rel="stylesheet" href="style.css" type="text/css" media="all" />
 
 </head>
 <body>
 <center>
+<div class="container">
+<section id="content">
+<form action="">
 <?php
 	$f=$_POST['firstname'];
 	$n=$_POST['secondname'];
@@ -37,6 +40,9 @@ try{
 		echo "Succes <br><a href='index.php'>Add new user</a>";
 	}
 ?>
+</form>
+</section>
+</div>
 </center>
 </body>
 </html>
