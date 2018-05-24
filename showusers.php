@@ -3,17 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<title>Table with users</title>
-    <style type="text/css">
-	#centerLayer {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: #AFEEEE;
-    }
-</style>
+        <link rel="stylesheet" href="style.css" type="text/css" media="all" />
 </head>
 <body>
-<div style="text-align:center">
+<div class="container">
+<section id="content">
+<form action="">
 	<?php 
                try{
 		         $link = new PDO('mysql:host=mysql; dbname=projectphp; charset=UTF8', 'root', 'pass', array(PDO::ATTR_EMULATE_PREPARES => false, PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
@@ -29,6 +24,8 @@
 		}
 		echo "</table>";
 	?>
+</form>
+</section>
 </div>
 </body>
 </html>
