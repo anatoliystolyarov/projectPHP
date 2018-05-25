@@ -10,7 +10,6 @@
 <section id="content">
 <form action="">
 	<?php 
-		echo "nothing to do here";
                try{
 		         $link = new PDO('mysql:host=mysql; dbname=projectphp; charset=UTF8', 'root', 'pass', array(PDO::ATTR_EMULATE_PREPARES => false, PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
                 }catch (PDOException $e){
