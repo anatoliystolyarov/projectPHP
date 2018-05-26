@@ -21,12 +21,12 @@
 		echo "<br>Inventory number<br><br>";
 		echo "<input type='text' name='invnumber'><br>";
 		echo '<br><p><input type="Submit">';
-		
+
 	?>
 </form>
 <form action="showusers.php" method="">
-	<?php 
-		echo '<a href="showusers.php"><button>View a table</button></a>';
+	<?php
+		echo '<a href="showusers.php"><button type="View a table">View a table</button></a>';
 	 ?>
 </form>
 </section>
