@@ -11,6 +11,7 @@
 <section id="content">
 <form action="adduser.php" method="POST">
 	<?php
+		echo "HEllo";
 		echo "Hello its new veriosn of jenkins";
  		echo "First Name <br><br>";
 		echo "<input type='text' name='firstname'><br>";
