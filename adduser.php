@@ -37,7 +37,7 @@ try{
 		$s="INSERT INTO  userdata VALUES('".$f."','".$n."','".$o."','".$g."');";
 		$Query= $link->query($s);
 		$link=null;
-		echo ' <a href="showusers.php"><button type="View a table">Add new user</button></a>';
+		echo 'Succes. <a href="showusers.php"><button type="View a table">Add new user</button></a>';
 	}
 ?>
 </form>
