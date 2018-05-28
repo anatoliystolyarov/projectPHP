@@ -25,7 +25,7 @@ try{
 	$p=0;
 	while($q=$Query->fetch()){
 		if($q[0]==$f and $q[1]==$n and $q[2]==$o){
-			$up="UPDATE userdata SET f=".$f." WHERE n='".$n."' AND o='".$o."' AND g='".$g."';";
+			$up="UPDATE userdata SET f=".$f." WHERE n='".$n."' AND o='"NULL"' AND g='"NULL"';";
 			$Query=$link->query($up);
 			$link=null;
 			$p=1;
@@ -34,7 +34,7 @@ try{
 		}
 	}
 	if($p==0){
-		$s="INSERT INTO  userdata VALUES('".$f."','".$n."','NULL','NULL');";
+		$s="INSERT INTO  userdata VALUES('".$f."','".$n."','$o','$g');";
 		$Query= $link->query($s);
 		$link=null;
 		echo 'Succes. <br><a href="showusers.php"><button type="View a table">Add new user</button></a>';
