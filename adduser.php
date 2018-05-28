@@ -29,7 +29,7 @@ try{
 			$Query=$link->query($up);
 			$link=null;
 			$p=1;
-			echo "Succes. <br><a href='index.php'><button type="View a table">Add new user</button></a>";
+			echo ' <a href="index.php"><button type="View a table">Add new user</button></a>';
 			break;
 		}
 	}
@@ -37,7 +37,7 @@ try{
 		$s="INSERT INTO  userdata VALUES('".$f."','".$n."','".$o."','".$g."');";
 		$Query= $link->query($s);
 		$link=null;
-		echo "Succes <br><a href='index.php'><button type="View a table">Add new user</button></a>";
+		echo ' <a href="index.php"><button type="View a table">Add new user</button></a>';
 	}
 ?>
 </form>
