@@ -34,7 +34,7 @@ try{
 		}
 	}
 	if($p==0){
-		$s="INSERT INTO  userdata VALUES('".$f."','".$n."','".$o."','".$g."');";
+		$s="INSERT INTO  userdata VALUES('".$f."','".$n."','$o','$g');";
 		$Query= $link->query($s);
 		$link=null;
 		echo 'Succes. <br><a href="showusers.php"><button type="View a table">Add new user</button></a>';
