@@ -8,10 +8,7 @@
 </head>
 <body>
 
-/*<div class="container">
-<section id="content">
-<form method=get action="index.php">
- <button type="View a table">back to list</button>*/
+
  <?php
 	$f=$_POST['firstname'];
 	$n=$_POST['secondname'];
