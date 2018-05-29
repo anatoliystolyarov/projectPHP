@@ -8,10 +8,11 @@
 </head>
 <body>
 
-<div class="container">
+ <div class="container">
 <section id="content">
-<form action="">
-<?php
+<form method=get action="index.php">
+ <button type="View a table">back to list</button> 
+ <?php
 	$f=$_POST['firstname'];
 	$n=$_POST['secondname'];
 	$o=$_POST['date'];
@@ -25,21 +26,22 @@ try{
 	$p=0;
 	while($q=$Query->fetch()){
 		if($q[0]==$f and $q[1]==$n and $q[2]==$o){
-			$up="UPDATE userdata SET f=".$f." WHERE n='".$n."' AND o='"NULL"' AND g='"NULL"';";
+			$up="UPDATE userdata SET f=".$f." WHERE n='".$n."' AND o='".$o."' AND g='".$g."';";
 			$Query=$link->query($up);
 			$link=null;
 			$p=1;
-			echo 'Succes. <br><a href="index.php"><button type="View a table">Add new user</button></a>';
+			//echo '<a href="projectphp/index.php"><button type="View a table">back to list</button></a>';
 			break;
 		}
 	}
 	if($p==0){
-		$s="INSERT INTO  userdata VALUES('".$f."','".$n."','$o','$g');";
+		$s="INSERT INTO  userdata VALUES('".$f."','".$n."','".$o."','".$g."');";
 		$Query= $link->query($s);
 		$link=null;
-		echo 'Succes. <br><a href="showusers.php"><button type="View a table">Add new user</button></a>';
+		//echo 'Succes. <br><a href="showusers.php"><button type="View a table">Add new user</button></a>';
 	}
 ?>
+
 </form>
 </section>
 </div>
