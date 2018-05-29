@@ -26,7 +26,7 @@ try{
 	$p=0;
 	while($q=$Query->fetch()){
 		if($q[0]==$f and $q[1]==$n and $q[2]==$o){
-			$up="UPDATE userdata SET f=".$f." WHERE n='".$n."' AND o='"NULL"' AND g='"NULL"';";
+			$up="UPDATE userdata SET f=".$f." WHERE n='".$n."' AND o='".$o."' AND g='".$g."';";
 			$Query=$link->query($up);
 			$link=null;
 			$p=1;
