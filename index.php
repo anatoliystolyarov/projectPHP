@@ -11,7 +11,6 @@
 <section id="content">
 <form action="adduser.php" method="POST">
 	<?php
-		echo "add additional row";
  		echo "First Name <br><br>";
 		echo "<input type='text' name='firstname'><br>";
 		echo "<br>Second Name <br><br>";
