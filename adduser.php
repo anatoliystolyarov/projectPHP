@@ -10,8 +10,9 @@
 
 <div class="container">
 <section id="content">
-<form action="">
-<?php
+<form method=get action="index.php">
+ <button type="View a table">back to list</button>
+ <?php
 	/*$f=$_POST['firstname'];
 	$n=$_POST['secondname'];
 	$o=$_POST['date'];
@@ -29,7 +30,7 @@ try{
 			$Query=$link->query($up);
 			$link=null;
 			$p=1;*/
-			echo '<a href="projectphp/index.php"><button type="View a table">back to list</button></a>';
+			/*echo '<a href="projectphp/index.php"><button type="View a table">back to list</button></a>';
 			//break;
 		//}
 //	}
