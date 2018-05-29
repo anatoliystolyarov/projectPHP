@@ -7,8 +7,10 @@
 
 </head>
 <body>
-
-
+ <div class="container">
+<section id="content">
+<form method=get action="index.php">
+ 
  <?php
 	$f=$_POST['firstname'];
 	$n=$_POST['secondname'];
