@@ -7,10 +7,11 @@
 
 </head>
 <body>
+
  <div class="container">
 <section id="content">
 <form method=get action="index.php">
- 
+ <button type="View a table">back to list</button> 
  <?php
 	$f=$_POST['firstname'];
 	$n=$_POST['secondname'];
@@ -40,10 +41,7 @@ try{
 		//echo 'Succes. <br><a href="showusers.php"><button type="View a table">Add new user</button></a>';
 	}
 ?>
-<div class="container">
-<section id="content">
-<form method=get action="index.php">
- <button type="View a table">back to list</button>
+
 </form>
 </section>
 </div>
