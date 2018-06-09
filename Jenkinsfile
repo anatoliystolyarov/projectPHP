@@ -5,7 +5,7 @@ pipeline {
       parallel {
         stage('Docker Push') {
           steps {
-            git(url: 'https://github.com/anatoliystolyarov/docker-compose.git', branch: 'origin')
+            git 'https://github.com/anatoliystolyarov/docker-compose.git'
             sh '''docker-compose build 
 echo build succesful'''
           }
