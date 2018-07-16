@@ -11,7 +11,7 @@
 <section id="content">
 <form action="adduser.php" method="POST">
 	<?php
-        echo "Inital page of PHP project <br><br>";
+        echo "IT IS Inital page of PHP project <br><br>";
  		echo "First Name <br><br>";
 		echo "<input type='text' name='firstname'><br>";
 		echo "<br>Second Name <br><br>";
